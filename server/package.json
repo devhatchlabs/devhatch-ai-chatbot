@@ -3,16 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
+  "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
-},
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@langchain/community": "^1.1.29"
+    "@langchain/community": "^1.1.29",
+    "@langchain/core": "^1.1.48"
   },
   "devDependencies": {
     "@langchain/groq": "^1.2.1",
