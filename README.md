@@ -271,5 +271,5 @@ We focus on building intelligent business solutions, AI chatbots, automation sys
 Tagline: Build Smarter. Scale Faster.
 
 Website: devhatchlabs.com
-Email: [hello@devhatchlabs.com](mailto:hello@devhatchlabs.com)
+Email: hello@devhatchlabs.com
 GitHub: DevHatchLabs
