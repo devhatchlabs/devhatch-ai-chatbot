@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #1a2340;
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #2563EB, #1d4ed8);
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.95); }
+}
+
+@keyframes bounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-8px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(37, 99, 235, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(37, 99, 235, 0.8); }
+}
+
+@keyframes typingDot {
+  0%, 60%, 100% { transform: translateY(0); }
+  30% { transform: translateY(-10px); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-bounce-dot {
+  animation: bounce 1.4s infinite ease-in-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Glass Morphism */
+.glass-effect {
+  background: rgba(13, 23, 48, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.glass-card {
+  background: rgba(22, 32, 56, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-custom {
+  background: linear-gradient(135deg, #0A1128 0%, #0D1730 50%, #162038 100%);
+}
+
+.message-gradient-user {
+  background: linear-gradient(135deg, #2563EB, #1d4ed8);
+}
+
+.message-gradient-bot {
+  background: linear-gradient(135deg, #162038, #1a2340);
+}
+
+/* Chip Hover Effects */
+.chip-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chip-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Shimmer Loading */
+.shimmer {
+  background: linear-gradient(90deg, #1a2340 25%, #2a3560 50%, #1a2340 75%);
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Typing Animation */
+.typing-dot {
+  animation: typingDot 1.4s infinite ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .responsive-text {
+    font-size: 14px;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(5px);
+  }
+}
+
+/* Custom Selection */
+::selection {
+  background: rgba(37, 99, 235, 0.3);
+  color: white;
+}
+
+/* Focus Rings */
+*:focus {
+  outline: none;
+  ring: 2px solid #2563EB;
+  ring-offset: 2px;
+}
+
+/* Slide Down Animation for Notifications */
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.animate-slideInDown {
+  animation: slideInDown 0.3s ease-out forwards;
+}
