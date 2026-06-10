@@ -260,10 +260,15 @@ This project was developed using separate Git branches:
 
 ---
 
-## Brand
+## About DevHatch Labs
 
-**DevHatch Labs**
-Build Smarter. Scale Faster.
+DevHatch Labs means: Where ideas hatch into intelligent software.
+
+DevHatch Labs is a digital laboratory where software and business ideas are born, developed, and brought to life through modern AI, automation, and full-stack web technologies.
+
+We focus on building intelligent business solutions, AI chatbots, automation systems, and scalable web applications that help businesses work smarter and grow faster.
+
+Tagline: Build Smarter. Scale Faster.
 
 Website: devhatchlabs.com
 Email: [hello@devhatchlabs.com](mailto:hello@devhatchlabs.com)
